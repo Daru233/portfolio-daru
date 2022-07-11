@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Section from "../../common/Sections/Section";
-import { Name, Greeting, Square } from "./Components";
+import { Name, Greeting, Square, Info } from "./Components";
 import {
     motion,
     useViewportScroll,
@@ -25,9 +25,52 @@ const LandingPage = () => {
     return (
         <Section landingPage>
             <div>
-                <Greeting>Hi, I'm</Greeting>
-                <Name>Michael Malto</Name>
-                <Square style={{ background: background, opacity: opacity }} />
+                <Greeting
+                    initial={{ y: 20 }}
+                    animate={{
+                        opacity: [0, 0.2, 1],
+                        y: 0,
+                    }}
+                    transition={{
+                        type: "spring",
+                        duration: 1,
+                        stiffness: 250,
+                        delay: 0.2,
+                    }}
+                >
+                    Hi, I'm
+                </Greeting>
+                <Name
+                    initial={{ y: 20 }}
+                    animate={{
+                        opacity: [0, 0.2, 0.4, 1],
+                        y: 0,
+                    }}
+                    transition={{
+                        type: "spring",
+                        duration: 1,
+                        stiffness: 250,
+                        delay: 0.4,
+                    }}
+                >
+                    Michael Malto
+                </Name>
+
+                <Info
+                    initial={{ y: 20 }}
+                    animate={{
+                        opacity: [0, 0.2, 0.4, 1],
+                        y: 0,
+                    }}
+                    transition={{
+                        type: "spring",
+                        duration: 1,
+                        stiffness: 250,
+                        delay: 0.6,
+                    }}
+                >
+                    I love to learn!
+                </Info>
             </div>
         </Section>
     );
