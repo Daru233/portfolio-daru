@@ -1,10 +1,11 @@
 import React from "react";
 import Section from "../../common/Sections/Section";
+import { Heading } from "./Components";
 
 const AboutPage = () => {
     return (
         <Section>
-            <h1>About Page</h1>
+            <Heading>About Page</Heading>
         </Section>
     );
 };

@@ -20,17 +20,11 @@ export const Greeting = styled(motion.p)`
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
     font-size: 2em;
+    padding-right: 50vh;
 `;
 
 export const Info = styled(motion.p)`
     color: #f5f5f5;
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
-`;
-
-export const InfoCurtain = styled(motion.div)`
-    /* background-color: #202020; */
-    background-color: aqua;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
 `;
