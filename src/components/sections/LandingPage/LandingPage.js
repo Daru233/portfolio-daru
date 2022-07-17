@@ -20,6 +20,11 @@ const LandingPage = () => {
         ["#5526D9", "#EC13EA", "rgb(230, 255, 0)"]
     );
 
+    const boxVariant = {
+        visible: { opacity: 1, scale: 2 },
+        hidden: { opacity: 0, scale: 0 },
+    };
+
     const opacity = useTransform(scrollYProgress, [0, 1, 2], [1, 0.5, 0]);
 
     return (
@@ -31,6 +36,7 @@ const LandingPage = () => {
                         opacity: [0, 0.2, 1],
                         y: 0,
                     }}
+                    x
                     transition={{
                         type: "spring",
                         duration: 1,
