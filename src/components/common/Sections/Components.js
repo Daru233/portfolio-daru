@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const InViewContainer = styled(motion.div)`
+    margin-top: 25vh;
     height: 12vw;
     width: 12vw;
-    background-color: transparent;
+    background-color: red;
     border-style: solid;
     border-width: 1vh;
     border-color: red;
